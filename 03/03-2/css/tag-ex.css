@@ -1,0 +1,20 @@
+/* 
+03.CSS 기본 문법 빠르게 끝내기
+03-2.CSS로 HTML 요소 다양하게 선택하기
+03-2-2.태그 선택자 - 태그명을 이용하여 선택하기
+03-2-2-1.태그 선택자 사용하기
+*/
+@charset "utf-8";
+
+/* 태그 선택자 */
+h1 {
+    border: 1px solid red;
+}
+
+h2 {
+    border: 1px solid green;
+}
+
+h3 {
+    border: 1px solid blue;
+}
