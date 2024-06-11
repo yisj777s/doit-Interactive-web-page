@@ -5,6 +5,8 @@
 03-2-7-1.수열 선택자를 사용하는 목록 만들기
 03-2-8.마지막 요소 선택자 - 형제 요소 중 마지막 요소를 선택하기
 03-2-8-1.마지막 요소 선택하기
+03-2-9.홀수, 짝수 선택자 - 홀수 또는 짝수 요소를 선택하기
+03-2-9-1.홀수, 짝수 선택자 사용하기
 */
 @charset "utf-8";
 
@@ -24,8 +26,14 @@
 } */
 
 /* 마지막 요소 선택자 */
-ul li:last-child {
+/* ul li:last-child {
   border: 1px solid blue;
-}
+} */
 
 /* 짝수, 홀수 선택자 */
+ul li:nth-of-type(odd) { /* 홀수 선택자 */
+  border: 1px solid blue;
+}
+ul li:nth-of-type(even) { /* 짝수 선택자 */
+  border: 1px solid red;
+}
