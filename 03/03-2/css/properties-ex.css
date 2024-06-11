@@ -1,0 +1,16 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-2.CSS로 HTML 요소 다양하게 선택하기
+03-2-10.속성 선택자 - 속성값을 이용하여 선택하기
+03-2-10-1.속성 선택자 사용하기
+*/
+@charset "utf-8";
+
+/* 속성 선택자 */
+input[type="text"] {
+  border: 1px solid blue;
+}
+
+input[type="password"] {
+  border: 1px solid red;
+}
