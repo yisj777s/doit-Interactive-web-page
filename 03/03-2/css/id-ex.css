@@ -1,0 +1,18 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-2.CSS로 HTML 요소 다양하게 선택하기
+03-2-13.아이디 선택자 - 아이디명으로 요소를 선택하기
+03-2-13-1.아이디 선택자 사용하기
+*/
+@charset "utf-8";
+
+/* 아이디 선택자 */
+#header {
+  border: 1px solid red;
+}
+#section {
+  border: 1px solid green;
+}
+#footer {
+  border: 1px solid violet;
+}
