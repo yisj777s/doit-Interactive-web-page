@@ -1,0 +1,28 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-4.웹 페이지에서 영역별 크기 정하기
+03-4-1.너비와 높이 지정하기
+03-4-1-1.태그의 너빗값과 높잇값 지정하기
+*/
+@charset "utf-8";
+
+/* 넓이와 높이 설정하기 */
+article {
+  border: 1px solid red;
+}
+article:nth-of-type(1) {
+  width: 100px;
+  height: 100px;
+}
+article:nth-of-type(2) {
+  width: 20%;
+  height: 20%;
+}
+article:nth-of-type(3) {
+  width: 10vw;
+  height: 10vw;
+}
+article:nth-of-type(4) {
+  width: 10vh;
+  height: 10vh;
+}
