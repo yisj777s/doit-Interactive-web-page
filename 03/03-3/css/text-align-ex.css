@@ -1,0 +1,24 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-3.폰트 스타일링하기
+03-3-6.텍스트 정렬 방향 지정하기
+03-3-6-1.텍스트 정렬 방향 바꾸기
+*/
+@charset "utf-8";
+
+/* 글의 가로 세로 방향 정렬하기 */
+p {
+  border: 1px solid blue;
+}
+p:nth-of-type(1) {
+  text-align: left;
+}
+p:nth-of-type(2) {
+  text-align: center;
+}
+p:nth-of-type(3) {
+  text-align: right;
+}
+p:nth-of-type(4) {
+  text-align: justify;
+}
