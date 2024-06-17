@@ -1,0 +1,19 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-4.웹 페이지에서 영역별 크기 정하기
+03-4-6.블록 요소와 인라인 요소 태그
+03-4-6-1.블록 요소와 인라인 요소 비교하기
+*/
+@charset "utf-8";
+
+/* 블록 요소와 인라인 요소 태그 */
+p {
+   border: 1px solid red;
+   height: 100px;
+}
+strong, em {
+   border: 1px solid blue;
+   height: 50px;
+   /* display: inline-block; */
+   display: block;
+}
