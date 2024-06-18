@@ -1,0 +1,36 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-5.웹 페이지의 배경 꾸미기
+03-5-2.배경 이미지 삽입하기
+*/
+@charset "utf-8";
+
+/* 배경 이미지 삽입하고 배치하기 */
+section {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  background-image: url(../img/pattern.png);
+/* 배경 이미지 반복하지 않기 */
+  /* background-repeat: no-repeat; */
+/* 배경 이미지 가로축으로 반복 */
+  /* background-repeat: repeat-x; */
+/* 배경 이미지 세로축으로 반복 */
+  /* background-repeat: repeat-y; */
+/* 배경 이미지를 정중앙에 배치 */
+  /* background-repeat: no-repeat;
+  background-position: center center; */
+/* 배경 이미지 오른쪽 아래에 배치 */
+  /* background-repeat: no-repeat;
+  background-position: right bottom; */
+/* 배경 이미지 px로 배치 */
+  /* background-repeat: no-repeat;
+  background-position: 20px 60px; */
+/* 배경 이미지 백분율로 배치 */
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+/* 배경 이미지 크기 조절하기 */
+
+/* 배경 이미지를 여백 없이 가득 채우기 */
