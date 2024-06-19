@@ -1,0 +1,30 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-6.웹 페이지의 레이아웃 구성하기
+03-6-2.float - 블록 요소 좌우로 배치하기
+*/
+@charset "utf-8";
+
+/* float을 이용한 블록요소 좌우로 배치하기 */
+.wrap {
+  width: 800px;
+  margin: 100px auto;
+  border: 5px solid black;
+}
+.wrap .left {
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+  float: left;
+}
+.wrap .right {
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  float: left;
+}
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
