@@ -1,0 +1,25 @@
+/*
+03.CSS 기본 문법 빠르게 끝내기
+03-7.다양한 그래픽 효과 적용하기
+03-7-1.box-shadow, text-shadow ─ 요소의 그림자 만들기
+03-7-1-1.box-shadow ─ 블록 요소의 그림자 만들기
+*/
+@charset "utf-8";
+
+/* 그림자 설정하기 */
+.box1 {
+  width: 300px;
+  height: 300px;
+  background: blue;
+  margin: 100px;
+  float: left;
+  box-shadow: 10px 10px 30px black;
+}
+.box2 {
+  width: 300px;
+  height: 300px;
+  background: red;
+  margin: 100px;
+  float: left;
+  box-shadow: -20px -20px 0px pink;
+}
