@@ -1,0 +1,40 @@
+/* 
+04.인터랙티브 웹을 위한 CSS 다루기
+04-3.자동으로 움직이는 애니메이션 효과 만들기
+*/
+@charset "utf-8";
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+article {
+  width: 400px; height: 400px; background: blue; margin: 100px auto;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-delay: 0s;
+    /* animation 축약문
+  animation: rotation 2s linear infinite 0s; animation  */
+}
+
+/* 마우스 커서를 올리면 일시 정지하기 */
+article {
+  width: 400px; height: 400px; background: blue; margin: 100px auto;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-play-state: running;
+  transform: rotate(50deg);
+}
+article:hover {
+  animation-play-state: paused;
+}
