@@ -16,4 +16,10 @@ article svg {
   width: 100%;
 }
 
+/* practice-04-4-2.SVG의 path 스타일 변경하기 */
 /* path 속성 바꾸기 */
+article svg path {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 1;
+}
