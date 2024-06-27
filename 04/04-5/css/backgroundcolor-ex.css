@@ -1,0 +1,23 @@
+/*
+04.인터랙티브 웹을 위한 CSS 다루기
+04-5.화면 너비에 따라 웹 페이지 디자인 변경하기
+practice-04-5-1.미디어 쿼리를 사용하여 배경색 바꾸기
+*/
+@charset "utf-8";
+
+article {
+  width: 200px;
+  height: 200px;
+  background: pink;
+  margin: 100px auto;
+}
+@media screen and (max-width: 900px) {
+  article {
+    background: orange;
+  }
+}
+@media screen and (max-width: 400px) {
+  article {
+    background: aqua;
+  }
+}
