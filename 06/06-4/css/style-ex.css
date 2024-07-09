@@ -1,0 +1,14 @@
+/*
+06.자바스크립트로 웹 페이지 제어하기
+06-4.자바스크립트로 이벤트 연결하기 
+practice-06-4-1.클릭하면 좌우로 회전하는 박스 만들기
+*/
+@charset "utf-8";
+
+#box {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  background: aqua;
+  transition: 0.5s;
+}
