@@ -1,0 +1,48 @@
+/*
+07.온라인 프로필 카드 제작하기
+*/
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ebfaff;
+}
+section {
+  width: 340px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 50px auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid black
+}
+section nav.menu {
+ width: 100%;
+}
+section nav.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section nav.menu a {
+  font-size: 20px;
+  color: #666;
+}
+section nav.menu a:nth-of-type(1) {
+  float: left;
+}
+section nav.menu a:nth-of-type(2) {
+  float: right;
+}
