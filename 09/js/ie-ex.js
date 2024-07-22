@@ -1,3 +1,4 @@
+// 09.마을 애니메이션 제작하기
 const ver = navigator.userAgent;
 console.log(ver);
 
