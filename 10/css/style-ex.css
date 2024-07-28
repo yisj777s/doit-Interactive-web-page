@@ -91,7 +91,7 @@ body {
 
 /* face1 */
 .wrap #circle .face1 { /* 1번째 박스만 보이게 설정 */
-    display: none;
+    display: block;
 }
 .wrap #circle .face1 .inner > div {
     width: 233px;
@@ -138,7 +138,7 @@ body {
 
 /* face2 */
 .wrap #circle .face2 {
-    display: none;
+    display: block;
 }
 .wrap #circle .face2 .inner>div {
     width: 100%;
@@ -164,7 +164,7 @@ body {
 
 /* face3 */
 .wrap #circle .face3 {
-    display: none;
+    display: block;
 }
 .wrap #circle .face3 .inner>div {
     width: 100%;
@@ -221,7 +221,7 @@ body {
 
 /* face4 */
 .wrap #circle .face4 {
-    display: none;
+    display: block;
 }
 .wrap #circle .face4 .inner>div h2{
     font-size: 20px;
@@ -258,7 +258,7 @@ body {
 
 /* face5 */
 .wrap #circle .face5 {
-    display: none;
+    display: block;
 }
 .wrap #circle .face5 .inner>div {
     width: 100%;
@@ -335,4 +335,157 @@ body {
 .wrap #circle .face6 .inner>div .con p {
     font: 17px/1 "arial";
     color: #999;
+}
+
+/* face7 */
+.wrap #circle .face7 {
+    display: block;
+}
+.wrap #circle .face7 .inner>div {
+    width: 100%;
+    height: 100%;
+}
+.wrap #circle .face7 .inner>div>div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.wrap #circle .face7 .inner>div>div video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+.wrap #circle .face7 .inner>div>div h2 {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px #555;
+    z-index: 2;
+}
+.wrap #circle .face7 .inner>div>div img:nth-of-type(1) {
+    position: absolute;
+    width: 240px;
+    bottom: 0px;
+    right: 0px;
+}
+.wrap #circle .face7 .inner>div>div img:nth-of-type(2) {
+    position: absolute;
+    bottom: 67px;
+    right: -15px;
+    width: 90%;
+}
+
+/* face8 */
+.wrap #circle .face8 {
+    display: block;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(1) h2 {
+    margin-top: -20px;
+    font-size: 22px;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(1) {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 15px;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(1) i {
+    color: #fff;
+    font-size: 150px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    opacity: 0.9;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(1) span {
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(1) span em {
+    font: bold normal 50px/1 "arial";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+.wrap #circle .face8 .inner>div:nth-of-type(2) {
+    width: 242.5px;
+    height: 320px;
+    margin-right: 15px;
+    float: left;
+    text-align: center;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(2) i {
+    color: #fff;
+    font-size: 100px;
+    opacity: 0.8;
+    transform: rotate(70deg);
+}
+.wrap #circle .face8 .inner>div:nth-of-type(2) h3 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font: bold 17px/1 "orbitron";
+}
+.wrap #circle .face8 .inner>div:nth-of-type(2) p {
+    font: 11px/1 "arial";
+    color: #ccc;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(2) h4 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(2) h4 b {
+    font: bold 18px/1 "arial";
+    color: #ddd;
+    position: absolute;
+    top: -3px;
+    right: 30px;
+}
+
+
+
+.wrap #circle .face8 .inner>div:nth-of-type(3) {
+    width: 242.5px;
+    height: 320px;
+    float: left;
+    text-align: center;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(3) i {
+    color: #fff;
+    font-size: 100px;
+    opacity: 0.8;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(3) h3 {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    font: bold 17px/1 "orbitron";
+}
+.wrap #circle .face8 .inner>div:nth-of-type(3) p {
+    font: 11px/1 "arial";
+    color: #ccc;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(3) h4 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.wrap #circle .face8 .inner>div:nth-of-type(3) h4 b {
+    font: bold 18px/1 "arial";
+    color: #ddd;
+    position: absolute;
+    top: -3px;
+    right: 30px;
 }
