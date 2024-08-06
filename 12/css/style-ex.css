@@ -68,6 +68,7 @@ figure section { /* 음악 플레이어 패널 프레임 그룹 */
   margin-top: -25vh; /* 세로 위칫값 조절 */
   margin-left: -10vw;
   /* border: 1px solid aqua; */
+  transition: 1s;
 }
 figure section article { /* 개별 음악 플레이어 패널 */
   width: 100%;
@@ -138,4 +139,86 @@ figure section article .inner .pic .dot {
   position: relative;
   z-index: 3;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); 
+}
+
+figure section article .inner .txt {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+figure section article .inner .txt h2 {
+  font-size: 20px;
+  font-family: "arial";
+  color: #222;
+  margin-bottom: 2vh;
+}
+figure section article .inner .txt p {
+  font-size: 12px;
+  margin-bottom: 3vh;
+  color: #777;
+}
+figure section article .inner .txt ul {
+  display: flex;
+  justify-content: space-around;
+}
+figure section article .inner .txt ul li {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+figure section article .inner .txt ul li.play {
+  transform: scale(1.5); /* 가운데 재생 버튼만 1.5배 확대해서 강조 */
+  opacity: 0.9;
+}
+figure section article .inner .txt ul li:hover {
+  transform: scale(1.5); /* 좌우 버튼은 마우스 호버 시 1.5배로 확대 */ 
+  opacity: 0.8;
+}
+figure section article .inner .txt ul li.play:hover {
+  transform: scale(2); /* 재생 버튼은 마우스 호버 시 2배로 확대 */
+  opacity: 1;
+}
+
+@keyframes ani { /* 앨범 커버 이미지 회전 키프레임 */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ani2 { /* 앨범 커버 그림자 회전 키프레임 */
+  0% {
+    transform: translateY(10%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10%) rotate(360deg);
+  }
+}
+figure section article .inner .pic.on::after {
+  animation: ani 4s linear infinite;
+}
+figure section article .inner .pic.on::before {
+  animation: ani2 4s linear infinite;
+}
+
+figure .btnPrev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20vw, -50%);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  border: 2px solid red;
+}
+figure .btnPrev span {
+  font: 11px/1 "arial";
+  color: #fff;
+  opacity: 1;
+  transform: translateX(30%);
+  border: 2px solid blue;
 }
