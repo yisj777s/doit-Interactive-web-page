@@ -42,4 +42,52 @@ for(let el of lists) {
     e.currentTarget.closest("article").querySelector("audio").load();
     e.currentTarget.closest("article").querySelector("audio").play();
   });
+
+  const prev = document.querySelector(".btnPrev");
+  const next = document.querySelector(".btnNext");
+
+  let num = 0;
+
+  // prev.addEventListener("click", () => {
+  //   num++;
+  //   frame.style.transform = `rotate(${deg * num}deg)`;
+  // });
+
+  // next.addEventListener("click", () => {
+  //   num--;
+  //   frame.style.transform = `rotate(${deg * num}deg)`;
+  // });
+
+  let active = 0;
+
+  function activation(index, lists){
+    for(let el of lists) {
+      el.classList.remove("on");
+    }
+    lists[index].classList.add("on");
+  }
+
+    //prev 버튼을 클릭할 때마다
+    prev.addEventListener("click", () => {
+      //num 깂을 1씩 증가시켜서 아래 transform 연산식에 적용
+      num++;
+      frame.style.transform = `rotate(${deg * num}deg)`;
+
+      //현재 패널의 순번이 0이면 다시 마지막 패널의 순번으로 변경하고
+      //그렇지 않으면 현재 패널 순번에서 1씩 감소시켜서 activation 함수 호출
+      (active == 0) ? active = len : active--;
+      activation(active, lists);
+    });
+
+    //next 버튼을 클릭할 때마다
+    next.addEventListener("click", () => {
+      //num값을 1씩 감소시켜서 아래 transform 연산식에 적용
+      num--;
+      frame.style.transform = `rotate(${deg * num}deg)`;
+
+      //현재 패널의 순번이 마지막 순번이면 다시 처음 패널의 순번으로 변경하고
+      //그렇지 않으면 현재 패널 순번에 1씩 증가시켜서 activation 함수 호출
+      (active == len) ? active = 0 : active++;
+      activation(active, lists);
+    });
 }
