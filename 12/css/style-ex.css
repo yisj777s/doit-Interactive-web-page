@@ -5,6 +5,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /* 드래그 방지, 선택 버튼요소 커서 깜빡임 금지 */
+  user-select: none;
 }
 ul, ol, li {
   list-style: none;
@@ -315,4 +317,4 @@ figure .btnNext:hover::before {
 }
 figure .btnNext:hover::after {
   transform: rotate(-30deg);
-}s
+}
