@@ -1,0 +1,60 @@
+/* 13.핀터레스트 스타일의 반응형 웹 갤러리 제작하기 */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+ul, ol, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background: #efefef;
+}
+
+header {
+	width: 400px;
+	height: 100%;
+	background: linear-gradient(45deg, aqua, royalblue);
+	position: fixed; /* 화면 왼쪽에 고정 */
+	top: 0px;
+	left: 0px;
+}
+header h1 {
+	font: bold 50px/1 'orbitron';
+	color: #fff;
+	letter-spacing: 1px;
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-150%);
+}
+header h1::before {
+	content: 'UI/UX DEVELOPMENT';
+	display: block;
+	font: 14px/1 'orbitron';
+	color: #fff;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 0px;
+	top: 140px;
+	opacity: 0.8;
+}
+header h1::after {
+	content: '';
+	display: block;
+	width: 150px;
+	height: 2px;
+	background: #fff;
+	margin-top: 20px;
+}
+
+main {
+	margin-left: 400px; /* 너빗값 없이 왼쪽 여백만 추가 */
+	box-sizing: border-box;
+	padding: 20px;
+}
