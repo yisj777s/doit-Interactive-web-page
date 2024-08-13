@@ -116,7 +116,7 @@ main section article div p {
 	margin-bottom: 15px;
 }
 
-@media screen and (max-width:1599px) {
+@media screen and (max-width:1535px) { /* 노트북(1536px), 책 원본 폭 1600px미만(데스크탑) */
 	header {
 		width: 350px;
 	}
@@ -125,5 +125,66 @@ main section article div p {
 	}
 	main section article {
 		width: 25%;
+	}
+}
+@media screen and (max-width:1199px) {
+	header {
+		width: 100%;
+		height: 80px;
+		position: relative;
+	}
+	header h1 {
+		font: bold 24px/1 'orbitron';
+		transform: translateY(-50%);
+	}
+	header h1::before {
+		display: none;
+	}
+	header ul {
+		left: 83%;
+		bottom: 25px;
+	}
+	header ul li {
+		margin-right: 20px;
+	}
+	header ul li a {
+		font-size: 20px;
+	}
+	header ul li a span {
+		display: none;
+	}
+	main {
+		width: 100%;
+		margin-left: 0px;
+	}
+	main section article {
+		width: 25%;
+	}
+}
+@media screen and (max-width:899px) {
+	header h1::after {
+		display: none;
+	}
+	header ul {
+		left: 80%;
+	}
+	main section article {
+		width: 33.333%;
+	}
+}
+@media screen and (max-width:679px) {
+	header ul {
+		left: 70%;
+	}
+	main section article {
+		width: 50%;
+	}
+}
+@media screen and (max-width:539px) {
+	header ul {
+		display: none;
+	}
+	main section article {
+		width: 100%;
 	}
 }
