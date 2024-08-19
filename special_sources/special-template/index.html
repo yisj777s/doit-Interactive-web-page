@@ -43,5 +43,30 @@
 
     <div class="swiper-pagination"></div>
   </div>
+
+  <script>
+    const swiper = new Swiper('.wrap', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+    
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction' // 페이지 버튼 대신 슬라이더 번호 출력
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      spaceBetween: 50, // 패널 사이의 간격을 50px로 설정
+      slidesPerView: "auto", // CSS에 지정한 슬라이더의 크기를 반영
+      grabCursor: true, // 스와이프 시 마우스 포인터 모양 변경
+      centeredSlides: true, // 슬라이더 패널을 항상 가운데로 정렬
+      speed: 1000 // 슬라이더 이동 속도 지정
+    });
+  </script>
 </body>
 </html>
