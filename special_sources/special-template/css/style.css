@@ -73,3 +73,34 @@ a {
   opacity: 0.4;
   transition: 1s;
 }
+.wrap .swiper-button-prev {
+  left: auto; /* 기존 left값 초기화 */
+  right: 100px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3); /* 버튼 색을 흰색으로 변경 */
+  transform: scale(0.5);
+}
+.wrap .swiper-button-next {
+  left: auto; /* 기존 left값 초기화 */
+  right: 60px;
+  top: auto;
+  bottom: 50px;
+  filter: grayscale(100%) brightness(3); /* 버튼 색을 흰색으로 변경 */
+  transform: scale(0.5);
+}
+.swiper-pagination-fraction {
+  bottom: auto; /* 기존 bottom 값 초기화 */
+  top: 50px;
+  left: auto;
+  right: 50px;
+  width: auto;
+  font-size: 16px;
+  font-family: "orbitron";
+  letter-spacing: 1px;
+  color: #eee;
+}
+.swiper-pagination-fraction span:nth-of-type(1) {
+  font-size: 30px;
+  color: #fff;
+}
