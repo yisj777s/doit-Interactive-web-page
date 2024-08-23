@@ -109,6 +109,20 @@
         disableOnInteraction: true
       }
     });
+    //.btnStart 요소를 찿아서 btnStart에 저장
+    const btnStart = document.querySelector(".btnStart");
+    //.btnStop 요소를 찿아서 btnStop에 저장
+    const btnStop = document.querySelector(".btnStop");
+
+    //btnStart 버튼을 클릭하면 자동 스와이프를 시작
+    btnStart.addEventListener("click", () => {
+      swiper.autoplay.start();
+    });
+    
+    //btnStop 버튼을 클릭시 자동 스와이프를 정지
+    btnStop.addEventListener("click", () => {
+      swiper.autoplay.stop();
+    });
   </script>
 </body>
 </html>
